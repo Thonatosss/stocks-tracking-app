@@ -1,6 +1,5 @@
 import React, {useEffect, useRef} from 'react'
-    ;
-import {receiveBrowserLogsTurbopack} from "next/dist/server/dev/browser-logs/receive-logs";
+
 
 const useTradingViewWidget = (scriptURL: string, config: Record<string, unknown>, height = 600) => {
     const containerRef = useRef<HTMLDivElement | null>(null);

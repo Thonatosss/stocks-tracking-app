@@ -6,7 +6,7 @@ import UserDropdown from "@/components/UserDropdown";
 
 const Header = () => {
     return (
-        <header className="sticky top0 header mb-5">
+        <header className="sticky top-0 header mb-5 z-20">
             <div className="container header-wrapper">
                 <Link href="/">
                     <Image src="/assets/icons/logo.svg" alt="Signalist Logo" width={140} height={32}
