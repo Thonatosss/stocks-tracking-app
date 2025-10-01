@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d760bf3-de50-4526-9f4b-91e671b5ae9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/forms/FooterLink.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(auth)/sign-in/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/sign-in/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(auth)/sign-up/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/sign-up/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/forms/CountrySelectField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/forms/CountrySelectField.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/forms/InputField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/forms/InputField.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +113,7 @@
       <workItem from="1759168142141" duration="208000" />
       <workItem from="1759220266738" duration="868000" />
       <workItem from="1759225137415" duration="3224000" />
-      <workItem from="1759309590388" duration="4179000" />
+      <workItem from="1759309590388" duration="4584000" />
     </task>
     <servers />
   </component>

@@ -28,6 +28,7 @@ const SignIn = () => {
         <h1 className="form-title text-left">Log In Your Account</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 w-3/4">
             <InputField name="email"
+                        type="email"
                         label="Email"
                         placeholder="mmromashenko@gmail.com"
                         register={register}
