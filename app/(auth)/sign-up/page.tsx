@@ -1,10 +1,10 @@
 'use client'
-import React, { useState, useMemo } from 'react';
-import { useForm} from "react-hook-form";
+import {useForm} from "react-hook-form";
 import InputField from "@/components/forms/InputField";
 import SelectField from "@/components/forms/SelectField";
 import {INVESTMENT_GOALS, PREFERRED_INDUSTRIES, RISK_TOLERANCE_OPTIONS} from "@/lib/constants";
-import CountrySelectField from "@/components/forms/CountrySelectField";
+import {CountrySelectField} from "@/components/forms/CountrySelectField";
+import FooterLink from "@/components/forms/FooterLink";
 
 const SignUp = () => {
     const {
@@ -54,13 +54,13 @@ const SignUp = () => {
                             }}
                 />
                 <CountrySelectField
-                            name="selectCountry"
-                            label="Country"
-                            control={control}
-                            error={errors.country}
-
-
+                    name="country"
+                    label="Country"
+                    control={control}
+                    error={errors.country}
+                    required
                 />
+
                 <InputField name="password"
                             label="Password"
                             placeholder="Enter a strong password"
@@ -70,35 +70,36 @@ const SignUp = () => {
                             validation={{required: 'Password is required', minLength: 8}}
                 />
                 <SelectField
-                            name="investmentGoals"
-                            label="Investment Goals"
-                            placeholder="Select your investment goal"
-                            options={INVESTMENT_GOALS}
-                            control={control}
-                            error={errors.investmentGoals}
-                            required
+                    name="investmentGoals"
+                    label="Investment Goals"
+                    placeholder="Select your investment goal"
+                    options={INVESTMENT_GOALS}
+                    control={control}
+                    error={errors.investmentGoals}
+                    required
                 />
                 <SelectField
-                            name="riskTolerance"
-                            label="Risk Tolerance"
-                            placeholder="Select your risk level"
-                            options={RISK_TOLERANCE_OPTIONS}
-                            control={control}
-                            error={errors.riskTolerance}
-                            required
+                    name="riskTolerance"
+                    label="Risk Tolerance"
+                    placeholder="Select your risk level"
+                    options={RISK_TOLERANCE_OPTIONS}
+                    control={control}
+                    error={errors.riskTolerance}
+                    required
                 />
                 <SelectField
-                            name="preferredIndustry"
-                            label="Preferred Industry"
-                            placeholder="Select your preferred industry"
-                            options={PREFERRED_INDUSTRIES}
-                            control={control}
-                            error={errors.preferredIndustry}
-                            required
+                    name="preferredIndustry"
+                    label="Preferred Industry"
+                    placeholder="Select your preferred industry"
+                    options={PREFERRED_INDUSTRIES}
+                    control={control}
+                    error={errors.preferredIndustry}
+                    required
                 />
                 <button disabled={isSubmitting} className="yellow-btn w-full mt-5">
                     {isSubmitting ? 'Creating account' : 'Start your investing journey'}
                 </button>
+                <FooterLink text="Already have an account?" linkText="Sign in" href="/sign-in"/>
             </form>
         </>
     )
